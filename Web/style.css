@@ -1,0 +1,40 @@
+
+header{
+    text-align: center;
+    padding: 5px;
+    margin: 10px;   
+}
+nav{
+    background-color: gray;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    color: white;
+}
+nav a{
+    color: white;
+}
+div{
+    text-align: center;
+}
+
+body{
+    background-color: bisque;
+    margin: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+    text-align: justify;
+}
+
+footer{
+    text-align: center;
+    background-color: gray;
+    padding: 5px;
+    margin: 10px;
+}
+#p-foother{
+    text-align: center;
+}
+
