@@ -75,6 +75,7 @@ public class Main {
             System.out.println("Este valor está acima do seu saldo, que é " + saldoAtual);
         }
 
+
         int op;
         do {
             System.out.println("Você confirma o levantamento de " + valorLev + "€");
@@ -137,6 +138,9 @@ public class Main {
             System.out.println("Você não possui saldo suficiente para jogar na Lotaria. Efetue um depósito para continuar a jogar");
             return;
         }
+        else {
+            saldoAtual = saldoAtual - 5;
+        }
 
         int numPremio = rnd.nextInt(1000, 10000);
 
@@ -165,12 +169,10 @@ public class Main {
         else if (numPremio % 100 == num % 100) {
             System.out.println("Apostador com o número " + num + " ganhou o 3º prêmio!");
             saldoAtual = saldoAtual + 50;
-        } else {
-            System.out.println("Apostador com o número " + num + " não ganhou nenhum prêmio.");
-            saldoAtual = saldoAtual - 5;
         }
-
-
+        else {
+            System.out.println("Apostador com o número " + num + " não ganhou nenhum prêmio.");
+        }
     }
 
     private static void Raspadinha() {
@@ -178,6 +180,7 @@ public class Main {
         if (saldoAtual < 2) {
             System.out.println("Você não possui saldo suficiente para jogar na Raspadinha. Efetue um depósito para continuar a jogar");
             return;
+
         }
 
         int op;
